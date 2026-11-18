@@ -1,62 +1,43 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2907
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qj\partightenfactor0
+Order of Importance: 
+JS, props, UI, Web Application, forms, router, components, onSubmit, Multipages, react, Zustand, UX, map, filter, onClick, state, buttons, links, validation, CSS, function, global state, nested routes.
 
-\f0\b\fs36 \cf0 Order of Importance: 
-\f1\b0\fs24 \
-JS, props, UI, Web Application, forms, router, components, onSubmit, Multipages, react, Zustand, UX, map, filter, onClick, state, buttons, links, validation, CSS, function, global state, nested routes.\
-\
+My Order:
+UI
+UX
+Web Application 
+CSS
+Multipages
+React
+State
+Components
+Props
+Functions
+Map
+Filter
+Forms
+Validation
+Button
+onClick
+onSubmit
+Links
+Router
+Nested Routes
+Global State
+Zustand
 
-\fs30 My Order:
-\fs24 \
-UI\
-UX\
-Web Application \
-CSS\
-Multipages\
-React\
-State\
-Components\
-Props\
-Functions\
-Map\
-Filter\
-Forms\
-Validation\
-Button\
-onClick\
-onSubmit\
-Links\
-Router\
-Nested Routes\
-Global State\
-Zustand\
-\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qj\partightenfactor0
+Logic of Ordering: The first impression of a website heavily depends on what it looks like and the content that is visible on the screen, and then once we go deeper thats when the minute things that may not be initially visible on the page also take importance, like managing the behind the scenes logistics such as routes and then efficiency matters. But looks are most important.
 
-\f0\b \cf0 Logic of Ordering:
-\f1\b0  The first impression of a website heavily depends on what it looks like and the content that is visible on the screen, and then once we go deeper thats when the minute things that may not be initially visible on the page also take importance, like managing the behind the scenes logistics such as routes and then efficiency matters. But looks are most important.\
-\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qj\partightenfactor0
+Short Note on {UI, UX, Web Application, CSS, Multipages}:
+We build a web application to cater to various uses and needs of people and in frontend we focus on user experience and the user interface so that users have a smooth and efficient work experience when visiting the website. Firstly, any user notices the look and feel of the website which is heavily influenced by CSS, and then the website’s efficiency which comes from making it well-organised and multipage to avoid clutter and keep a neat and clean appeal.
 
-\f0\b\fs28 \cf0 Short Note on \{UI, UX, Web Application, CSS, Multipages\}:
-\f1\b0\fs24 \
-We build a web application to cater to various uses and needs of people and in frontend we focus on user experience and the user interface so that users have a smooth and efficient work experience when visiting the website. Firstly, any user notices the look and feel of the website which is heavily influenced by CSS, and then the website\'92s efficiency which comes from making it well-organised and multipage to avoid clutter and keep a neat and clean appeal.\
-\
-UI: the user interface should be smooth and efficient to cater to the user\'92s needs\
-UX: The user experience should be nice and pleasurable in order to retain the audience and stay ahead of the market competition.\
-Web Application: We build web applications to reach a wide audience through the World Wide Web\
-CSS: the design code of the website that determines the overall theme, look and the aesthetic of the website.\
-Multipage: to keep the highest efficiency users prefer a multipage design and also for developers it keeps thing organised and efficient for rendering.\
-\
-\
+UI: the user interface should be smooth and efficient to cater to the user’s needs
+UX: The user experience should be nice and pleasurable in order to retain the audience and stay ahead of the market competition.
+Web Application: We build web applications to reach a wide audience through the World Wide Web
+CSS: the design code of the website that determines the overall theme, look and the aesthetic of the website.
+Multipage: to keep the highest efficiency users prefer a multipage design and also for developers it keeps thing organised and efficient for rendering.
 
-\f0\b Summery:
-\f1\b0  What looks good is what sells ultimately so the looks, UI-UX, is extremely important when building a web application.\
-\
-\
-\
-}
+
+Summery: What looks good is what sells ultimately so the looks, UI-UX, is extremely important when building a web application.
+
+
+
