@@ -1,0 +1,65 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  
+  
+  background-color: pink;
+}
+
+
+
+header{
+  text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+h1{
+  color: sienna;
+}
+
+h2{
+  
+  color:indianred;
+}
+
+p{
+  color: black;
+}
+
+.searchbar{
+  display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.searchbar input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    margin: 0;
+}
+
+.grid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.card {
+    width: 75%;
+    padding: 5%;
+    font-size: medium;
+    border-radius: 10px;
+    text-align: center;
+    margin: 40px auto;
+    background: white;
+    
+}
+
+.card img{
+  align-items: center;
+}
+
