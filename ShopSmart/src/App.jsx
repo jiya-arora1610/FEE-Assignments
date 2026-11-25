@@ -8,7 +8,9 @@ function App() {
     const [search, setSearch] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
     const [total, setTotal] = useState(0);
-    const limit = 10;
+    const limit = 12;
+    const [sortBy, setSortBy] = useState("");
+    const [category, setCategory] = useState([]);
 
     useEffect(() => {
 
@@ -22,6 +24,34 @@ function App() {
             .catch(err => console.log(err));
 
     }, [currentPage]);
+
+    useEffect(() => {
+        fetch("https://dummyjson.com/products/category-list")
+            .then(res => res.json())
+            .then(data => {
+                setCategory(data);
+            })
+            .catch(err => console.log(err));
+        }, []); 
+
+    function sortProducts(value){
+        fetch(`https://dummyjson.com/products?sortBy=${value}&order=asc`)
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            setProducts(data.products);
+        })
+        .catch(err => console.log(err));
+    }
+
+    function filterProducts(category) {
+    fetch(`https://dummyjson.com/products/category/${category}`)
+        .then(res => res.json())
+        .then(data => {
+            setProducts(data.products);
+        })
+        .catch(err => console.log(err));
+}   
 
     return (
         <div>
@@ -38,9 +68,19 @@ function App() {
 
               <button onClick={() => setCurrentPage(currentPage-1)} disabled={currentPage === 1}>Back</button>
               <button onClick={() => setCurrentPage(currentPage + 1)} disabled={currentPage >= Math.ceil(total / limit)}>Next</button>
-              <button>Filter</button>
+              {/* <button>Filter</button> */}
 
-              <select>
+              <select onChange={(e) => filterProducts(e.target.value)}>
+                <option value="">Categories</option>
+                <option value=""></option>
+                {category.map(category => (
+                    <option key={category} value={category}>
+                        {category}
+                    </option>
+                ))}
+              </select>
+
+              <select onChange={(e) => sortProducts(e.target.value)}>
                   <option value="">Sort By</option>
                   <option value="price">Price</option>
                   <option value="rating">Rating</option>
